@@ -1,0 +1,53 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      erlang:
+        specifier: ^1.0.0
+        version: 1.0.0
+      zlib:
+        specifier: ^1.0.5
+        version: 1.0.5
+
+packages:
+
+  debug@1.0.5:
+    resolution: {integrity: sha512-SIKSrp4+XqcUaNWhwaPJbLFnvSXPsZ4xBdH2WRK0Xo++UzMC4eepYghGAVhVhOwmfq3kqowqJ5w45R3pmYZnuA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  erlang@1.0.0:
+    resolution: {integrity: sha512-wiWoJAl4LZA/Sa7oks/sacKZO1M/OinpDujNs5McgZaaIBZMuiHhiaoLK7kbwVB5rd9JIyRdMeyhVXYiGxEyPA==}
+    engines: {'0': node}
+
+  ms@2.0.0:
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
+
+  zlib@1.0.5:
+    resolution: {integrity: sha512-40fpE2II+Cd3k8HWTWONfeKE2jL+P42iWJ1zzps5W51qcTsOUKM5Q5m2PFb0CLxlmFAaUuUdJGc3OfZy947v0w==}
+    engines: {node: '>=0.2.0'}
+
+snapshots:
+
+  debug@1.0.5:
+    dependencies:
+      ms: 2.0.0
+
+  erlang@1.0.0:
+    dependencies:
+      debug: 1.0.5
+    transitivePeerDependencies:
+      - supports-color
+
+  ms@2.0.0: {}
+
+  zlib@1.0.5: {}

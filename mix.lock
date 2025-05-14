@@ -1,0 +1,3 @@
+%{
+  "egd": {:hex, :egd24, "0.10.1", "4a6b89b1f7cebad2437b88c3ee0db952383cdade01b944930f4bbeeeb7547ff7", [:rebar3], [], "hexpm", "30775933c6f6f7e9deb7ef8d895e65b6ef4b06a144dbe10adafdb3953af52050"},
+}
